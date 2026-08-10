@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Premium Dark Theme Variables (GOAT-Level Dark Mode) */
+:root {
+  --bg-primary: #0b0f17; /* deep navy charcoal */
+  --bg-secondary: #131c2e; /* refined surface navy */
+  --text-primary: #f8fafc; /* near-white */
+  --text-secondary: #cbd5e1; /* bright light slate gray */
+  --border-color: rgba(255, 255, 255, 0.08); /* subtle refined border */
+  --accent: #3b82f6; /* electric royal blue */
+}
+
+@layer base {
+  body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    @apply antialiased transition-colors duration-300 font-sans;
+  }
+}
+
+@layer components {
+  .glass-panel {
+    background-color: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    color: var(--text-primary);
+    @apply backdrop-blur-xl shadow-[0_10px_30px_rgba(0,0,0,0.3)] rounded-2xl transition-all duration-300;
+  }
+  
+  .nav-link {
+    color: #cbd5e1;
+    @apply hover:text-blue-400 transition-colors duration-300 font-medium text-sm tracking-wide;
+  }
+
+  .btn-primary {
+    @apply px-6 py-3 bg-blue-600 hover:bg-blue-500 text-white rounded-xl font-semibold transition-all duration-300 shadow-[0_0_20px_rgba(37,99,235,0.35)] hover:shadow-[0_0_30px_rgba(37,99,235,0.55)] active:scale-[0.98];
+  }
+
+  .btn-outline {
+    @apply px-6 py-3 bg-transparent border border-blue-500/40 hover:border-blue-400 text-blue-400 hover:text-white hover:bg-blue-500/10 rounded-xl font-semibold transition-all duration-300 active:scale-[0.98];
+  }
+  
+  .section-title {
+    @apply text-3xl md:text-5xl font-bold mb-12 text-transparent bg-clip-text bg-gradient-to-r from-white via-slate-100 to-slate-300 tracking-tight;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  @apply bg-slate-950;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-blue-600 rounded-full;
+}
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-blue-400;
+}
