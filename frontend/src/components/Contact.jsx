@@ -16,7 +16,7 @@ export default function Contact() {
     setStatus({ loading: true, success: false, error: '' });
     
     try {
-      const res = await axios.post('http://localhost:5000/api/contact', formData);
+      const res = await axios.post('https://amol-portfolio-backend.onrender.com/api/contact', formData);
       if (res.data.success) {
         setStatus({ loading: false, success: true, error: '' });
         setFormData({ name: '', email: '', subject: '', message: '' });
