@@ -27,7 +27,7 @@ export default function Navbar({ isScrolled }) {
               {link.name}
             </a>
           ))}
-          <a href="https://drive.google.com/file/d/1aTXz9kYO54_yjDTlhut_z8Md7P64yTv2/view?usp=drivesdk" target="_blank" rel="noopener noreferrer" className="btn-outline px-4 py-2 text-sm">
+          <a href="https://drive.google.com/file/d/1CpS-B4og5dK0NZbsZ8_7vxmVVPriofqB/view?usp=drive_link" target="_blank" rel="noopener noreferrer" className="btn-outline px-4 py-2 text-sm">
             Resume
           </a>
         </nav>
@@ -59,7 +59,7 @@ export default function Navbar({ isScrolled }) {
                 {link.name}
               </a>
             ))}
-            <a href="https://drive.google.com/file/d/1aTXz9kYO54_yjDTlhut_z8Md7P64yTv2/view?usp=drivesdk" target="_blank" rel="noopener noreferrer" className="btn-primary mt-4 text-center">
+            <a href="https://drive.google.com/file/d/1CpS-B4og5dK0NZbsZ8_7vxmVVPriofqB/view?usp=drive_link" target="_blank" rel="noopener noreferrer" className="btn-primary mt-4 text-center">
               Download Resume
             </a>
           </motion.div>
